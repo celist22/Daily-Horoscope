@@ -10,9 +10,16 @@ import UIKit
 
 class DisplayHoroscopeViewController: UIViewController {
 
+    var chosenHoroscope:String?
+    
+    
+    @IBOutlet weak var blankLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+blankLabel.text = ChoseZodiac.chosenSign
         // Do any additional setup after loading the view.
     }
 

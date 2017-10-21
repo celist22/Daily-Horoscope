@@ -75,6 +75,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="AriesBTN" image="aries-zodiac-symbol-of-frontal-goat-head (1)"/>
+                                                        <connections>
+                                                            <action selector="Aries:" destination="DgK-bm-r56" eventType="touchUpInside" id="bzU-cB-ixn"/>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="PXZ-jC-zgm"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="Ef3-eq-WwT"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm2-8y-9qs">
                                                         <rect key="frame" x="0.0" y="45.333333333333314" width="52.333333333333336" height="14.333333333333336"/>
@@ -87,13 +92,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-QK-8tt">
                                                 <rect key="frame" x="102.33333333333333" y="0.0" width="53.666666666666671" height="59.666666666666664"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8i-dM-mBq">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8i-dM-mBq">
                                                         <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="45.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="H8i-dM-mBq" secondAttribute="height" multiplier="19:16" id="LIY-Q9-F3e"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="TaurusBTN" image="taurus-zodiac-symbol-of-bull-head-front"/>
+                                                        <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="6L5-ui-2sI"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="kX0-Cj-wSZ"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taurus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmL-2U-Ee4">
                                                         <rect key="frame" x="0.0" y="45.333333333333314" width="53.666666666666664" height="14.333333333333336"/>
@@ -106,13 +115,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="faS-ei-H4r">
                                                 <rect key="frame" x="206" y="0.0" width="56" height="59.666666666666664"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-lN-h9M">
+                                                    <button opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-lN-h9M">
                                                         <rect key="frame" x="0.0" y="0.0" width="56" height="45.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="BFo-lN-h9M" secondAttribute="height" multiplier="39:32" id="3fr-nK-Fdx"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="GeminiBTN" image="gemini-female-twins-couple-symbol"/>
+                                                        <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="nDD-Gm-bFk"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="jHK-qT-reR"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gemini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-hA-0ka">
                                                         <rect key="frame" x="0.0" y="45.333333333333314" width="56" height="14.333333333333336"/>
@@ -132,6 +145,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="CancerBTN" image="crab-cancer-symbol"/>
+                                                        <connections>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="5cp-FS-E1m"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTa-hr-vJv">
                                                         <rect key="frame" x="0.0" y="45.333333333333314" width="57" height="14.333333333333336"/>
@@ -149,13 +165,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P9X-e8-RF9">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="59.666666666666664"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xS-9o-JXo">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xS-9o-JXo">
                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="45.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="7xS-9o-JXo" secondAttribute="height" multiplier="9:8" id="AMb-GB-XuV"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="LeoBTN" image="leo-lion-head-side"/>
+                                                        <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="viy-Bb-3qB"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="Gcm-t0-pfY"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wc1-uE-pY9">
                                                         <rect key="frame" x="0.0" y="45.333333333333314" width="51" height="14.333333333333336"/>
@@ -168,13 +188,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MfU-AD-m7C">
                                                 <rect key="frame" x="100.99999999999999" y="0.0" width="54.333333333333329" height="59.666666666666664"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB6-Qt-VUg">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB6-Qt-VUg">
                                                         <rect key="frame" x="0.0" y="0.0" width="54.333333333333336" height="45.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="AB6-Qt-VUg" secondAttribute="height" multiplier="19:16" id="uZf-js-jcS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="VirgoBTN" image="virgo-woman-symbol"/>
+                                                        <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="7wv-MB-B8x"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="hWy-0q-kTX"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virgo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AE8-VK-jaE">
                                                         <rect key="frame" x="0.0" y="45.333333333333314" width="54.333333333333336" height="14.333333333333336"/>
@@ -187,13 +211,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Eg-29-m5z">
                                                 <rect key="frame" x="205.33333333333334" y="0.0" width="52.333333333333343" height="59.666666666666664"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUJ-VX-srX">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUJ-VX-srX">
                                                         <rect key="frame" x="0.0" y="0.0" width="52.333333333333336" height="45.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="aUJ-VX-srX" secondAttribute="height" multiplier="37:32" id="sef-pt-g8o"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="LibraBTN" image="libra-scale-balance-symbol"/>
+                                                        <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="sSx-VS-OQO"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="JYO-pN-Ab3"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Libra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYQ-B9-hlJ">
                                                         <rect key="frame" x="0.0" y="45.333333333333314" width="52.333333333333336" height="14.333333333333336"/>
@@ -206,13 +234,16 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-za-lYf">
                                                 <rect key="frame" x="307.66666666666669" y="0.0" width="61.333333333333314" height="59.666666666666664"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zu-yV-LVX">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zu-yV-LVX">
                                                         <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="45.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="7Zu-yV-LVX" secondAttribute="height" multiplier="43:32" id="dp6-kV-vWY"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="ScorpioBTN" image="scorpio-vertical-animal-shape-of-zodiac-symbol"/>
+                                                        <connections>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="qa3-4D-IY4"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scorpio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAh-Eg-RDE">
                                                         <rect key="frame" x="0.0" y="45.333333333333314" width="61.333333333333336" height="14.333333333333336"/>
@@ -230,13 +261,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MEp-ik-gAf">
                                                 <rect key="frame" x="0.0" y="0.0" width="81.666666666666671" height="56.333333333333336"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-oN-gFa">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-oN-gFa">
                                                         <rect key="frame" x="0.0" y="0.0" width="81.666666666666671" height="42"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="7RM-oN-gFa" secondAttribute="height" multiplier="31:16" id="fiU-gx-meZ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="SagittariusBTN" image="sagittarius-sign"/>
+                                                        <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="3JU-lq-jJx"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="GFu-bk-ZXE"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sagittarius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnZ-lG-4RA">
                                                         <rect key="frame" x="0.0" y="42" width="81.666666666666671" height="14.333333333333336"/>
@@ -249,13 +284,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L7G-VY-2Dh">
                                                 <rect key="frame" x="114.66666666666666" y="0.0" width="73.666666666666657" height="56.333333333333336"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jJ-nF-BLs">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jJ-nF-BLs">
                                                         <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="42"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="1jJ-nF-BLs" secondAttribute="height" multiplier="7:4" id="0Dd-h3-QI3"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="CapricornBTN" image="capricorn-astrological-sign-of-head-black-silhouette-with-horns"/>
+                                                        <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vTY-tt-qxa"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="4qU-2Y-SZt"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capricorn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDY-a9-B6W">
                                                         <rect key="frame" x="0.0" y="42" width="73.666666666666671" height="14.333333333333336"/>
@@ -268,13 +307,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Reh-H6-iUV">
                                                 <rect key="frame" x="221.33333333333334" y="0.0" width="64.666666666666657" height="56.333333333333336"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJU-Mb-Pxa">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJU-Mb-Pxa">
                                                         <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="42"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="CJU-Mb-Pxa" secondAttribute="height" multiplier="49:32" id="Dm0-9b-GRp"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="AquariusBTN" image="aquarius-astrological-sign-symbol"/>
+                                                        <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="NA3-ZI-zAe"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="c7i-Yd-c7e"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquarius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWl-WM-eOR">
                                                         <rect key="frame" x="0.0" y="42" width="64.666666666666671" height="14.333333333333336"/>
@@ -294,6 +337,10 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="PiscesBTN" image="pisces-astrological-sign-symbol (3)"/>
+                                                        <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="O3m-Ii-E1e"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" id="wLi-S1-LEr"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pisces" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exA-gc-6iG">
                                                         <rect key="frame" x="0.0" y="42" width="50" height="14.333333333333336"/>
@@ -323,18 +370,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H8I-rH-6z2"/>
-                    <connections>
-                        <segue destination="hDU-X3-5jS" kind="show" id="WPb-3w-QjK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <exit id="DgK-bm-r56" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1056.5217391304348" y="-321.19565217391306"/>
         </scene>
-        <!--Display Horoscope View Controller-->
+        <!--Your Horoscope-->
         <scene sceneID="5Ph-GM-vFq">
             <objects>
-                <viewController id="hDU-X3-5jS" customClass="DisplayHoroscopeViewController" customModule="Daily_Horoscope" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Your Horoscope" id="hDU-X3-5jS" customClass="DisplayHoroscopeViewController" customModule="Daily_Horoscope" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fgM-iY-dnh"/>
                         <viewControllerLayoutGuide type="bottom" id="pgb-DM-yOr"/>
@@ -342,8 +387,20 @@
                     <view key="view" contentMode="scaleToFill" id="1Rc-2h-za8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC6-dt-I3H">
+                                <rect key="frame" x="146" y="182" width="184" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="blankLabel" destination="fC6-dt-I3H" id="2vS-OE-SCN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crq-Fv-f24" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -523,4 +580,7 @@
         <image name="taurus-zodiac-symbol-of-bull-head-front" width="42" height="42"/>
         <image name="virgo-woman-symbol" width="42" height="42"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gcm-t0-pfY"/>
+    </inferredMetricsTieBreakers>
 </document>
