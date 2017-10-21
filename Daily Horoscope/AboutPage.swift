@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class SecondViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class AboutPage: UIViewController, MFMailComposeViewControllerDelegate {
     
     // Worked on email functionality for contact us button but did not have success.
 

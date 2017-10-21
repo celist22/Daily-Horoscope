@@ -12,7 +12,7 @@
         <!--Horoscope-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Daily_Horoscope" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="ChoseZodiac" customModule="Daily_Horoscope" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OV9-zd-otZ"/>
                         <viewControllerLayoutGuide type="bottom" id="cEt-ah-S4i"/>
@@ -349,7 +349,7 @@
         <!--About-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Daily_Horoscope" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="AboutPage" customModule="Daily_Horoscope" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Gh-UW-oMO"/>
                         <viewControllerLayoutGuide type="bottom" id="GW0-ID-scW"/>
