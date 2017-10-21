@@ -13,6 +13,7 @@
 		0DFE93C01F88459D00BCA6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFE93BE1F88459D00BCA6F2 /* Main.storyboard */; };
 		0DFE93C21F88459D00BCA6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DFE93C11F88459D00BCA6F2 /* Assets.xcassets */; };
 		0DFE93C51F88459D00BCA6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFE93C31F88459D00BCA6F2 /* LaunchScreen.storyboard */; };
+		3F372B391F9AE6BE008B7F2C /* DisplayHoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F372B381F9AE6BE008B7F2C /* DisplayHoroscopeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0DFE93C11F88459D00BCA6F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DFE93C41F88459D00BCA6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DFE93C61F88459D00BCA6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F372B381F9AE6BE008B7F2C /* DisplayHoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHoroscopeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0DFE93B81F88459D00BCA6F2 /* AppDelegate.swift */,
 				0DFE93BA1F88459D00BCA6F2 /* ChoseZodiac.swift */,
 				0DFE93BC1F88459D00BCA6F2 /* AboutPage.swift */,
+				3F372B381F9AE6BE008B7F2C /* DisplayHoroscopeViewController.swift */,
 				0DFE93BE1F88459D00BCA6F2 /* Main.storyboard */,
 				0DFE93C11F88459D00BCA6F2 /* Assets.xcassets */,
 				0DFE93C31F88459D00BCA6F2 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				0DFE93BD1F88459D00BCA6F2 /* AboutPage.swift in Sources */,
 				0DFE93B91F88459D00BCA6F2 /* AppDelegate.swift in Sources */,
+				3F372B391F9AE6BE008B7F2C /* DisplayHoroscopeViewController.swift in Sources */,
 				0DFE93BB1F88459D00BCA6F2 /* ChoseZodiac.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
