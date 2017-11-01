@@ -115,7 +115,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="faS-ei-H4r">
                                                 <rect key="frame" x="206" y="0.0" width="56" height="59.666666666666686"/>
                                                 <subviews>
-                                                    <button opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-lN-h9M">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-lN-h9M">
                                                         <rect key="frame" x="0.0" y="0.0" width="56" height="45.333333333333314"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="BFo-lN-h9M" secondAttribute="height" multiplier="39:32" id="3fr-nK-Fdx"/>
@@ -124,7 +124,7 @@
                                                         <state key="normal" title="GeminiBTN" image="gemini-female-twins-couple-symbol"/>
                                                         <connections>
                                                             <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="nDD-Gm-bFk"/>
-                                                            <segue destination="hDU-X3-5jS" kind="show" identifier="gemini" id="jHK-qT-reR"/>
+                                                            <segue destination="hDU-X3-5jS" kind="show" identifier="gemini" id="Wdb-zV-Uah"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gemini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-hA-0ka">
@@ -146,6 +146,7 @@
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="CancerBTN" image="crab-cancer-symbol"/>
                                                         <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="nDt-m1-OrO"/>
                                                             <segue destination="hDU-X3-5jS" kind="show" identifier="cancer" id="5cp-FS-E1m"/>
                                                         </connections>
                                                     </button>
@@ -242,6 +243,7 @@
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="1"/>
                                                         <state key="normal" title="ScorpioBTN" image="scorpio-vertical-animal-shape-of-zodiac-symbol"/>
                                                         <connections>
+                                                            <action selector="clickedButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="MqZ-rC-5JT"/>
                                                             <segue destination="hDU-X3-5jS" kind="show" identifier="scorpio" id="qa3-4D-IY4"/>
                                                         </connections>
                                                     </button>
@@ -581,6 +583,6 @@
         <image name="virgo-woman-symbol" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wLi-S1-LEr"/>
+        <segue reference="Wdb-zV-Uah"/>
     </inferredMetricsTieBreakers>
 </document>
