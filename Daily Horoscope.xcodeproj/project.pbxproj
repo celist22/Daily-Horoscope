@@ -14,6 +14,7 @@
 		0DFE93C21F88459D00BCA6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DFE93C11F88459D00BCA6F2 /* Assets.xcassets */; };
 		0DFE93C51F88459D00BCA6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFE93C31F88459D00BCA6F2 /* LaunchScreen.storyboard */; };
 		3F372B391F9AE6BE008B7F2C /* DisplayHoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F372B381F9AE6BE008B7F2C /* DisplayHoroscopeViewController.swift */; };
+		DE4A065A1FAAAAE500169CA9 /* Zodiac.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A06591FAAAAE500169CA9 /* Zodiac.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0DFE93C41F88459D00BCA6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DFE93C61F88459D00BCA6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F372B381F9AE6BE008B7F2C /* DisplayHoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHoroscopeViewController.swift; sourceTree = "<group>"; };
+		DE4A06591FAAAAE500169CA9 /* Zodiac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zodiac.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				0DFE93C11F88459D00BCA6F2 /* Assets.xcassets */,
 				0DFE93C31F88459D00BCA6F2 /* LaunchScreen.storyboard */,
 				0DFE93C61F88459D00BCA6F2 /* Info.plist */,
+				DE4A06591FAAAAE500169CA9 /* Zodiac.swift */,
 			);
 			path = "Daily Horoscope";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4A065A1FAAAAE500169CA9 /* Zodiac.swift in Sources */,
 				0DFE93BD1F88459D00BCA6F2 /* AboutPage.swift in Sources */,
 				0DFE93B91F88459D00BCA6F2 /* AppDelegate.swift in Sources */,
 				3F372B391F9AE6BE008B7F2C /* DisplayHoroscopeViewController.swift in Sources */,

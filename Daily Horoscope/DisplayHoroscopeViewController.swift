@@ -10,24 +10,38 @@ import UIKit
 
 class DisplayHoroscopeViewController: UIViewController {
     
-    var chosenHoroscope:String?
+    var chosenHoroscope:Zodiac?
     
     @IBOutlet weak var dateLBL: UILabel!
-    
     @IBOutlet weak var sunsignLBL: UILabel!
-    
     @IBOutlet weak var horoscopeTF: UITextView!
-    
     @IBOutlet weak var sunsignImage: UIImageView!
     
+    var apiURL:String = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/today/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sunsignLBL.text = ChoseZodiac.chosenSign
-        // Do any additional setup after loading the view.
-        
-        // let link = "http://sandipbgt.com/theastrologer/api/horoscope/aquarius/today/"
-        let url = URL(string: "http://sandipbgt.com/theastrologer/api/horoscope/virgo/today/")
+        today(nil)
+    }
+    
+    @IBAction func today(_ sender: UIButton?){
+        getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
+    }
+    
+    @IBAction func yesterday(_ sender: UIButton){
+        apiURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/yesterday/"
+        getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
+    }
+    
+    @IBAction func tomorrow(_ sender: UIButton){
+        apiURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/tomorrow/"
+        getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
+    }
+    
+    
+    
+    func getHoroscope(apiLink:String,zodiacImage:UIImage){
+        let url = URL(string: apiLink)
         let task = URLSession.shared.dataTask(with: url!){ (data, response, error) in
             if error != nil {print(error!)}
             else {
@@ -35,13 +49,11 @@ class DisplayHoroscopeViewController: UIViewController {
                     do{
                         let jsonResult = try JSONSerialization.jsonObject(with: urlContent, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                         DispatchQueue.main.async {
+                            self.sunsignLBL.text = "\(jsonResult["sunsign"]!!)"
                             self.dateLBL.text = "\(jsonResult["date"]!!)"
-                            //self.sunsignLBL.text = "\(jsonResult[""]!!)"
-                            self.sunsignImage.image = #imageLiteral(resourceName: "virgo-woman-symbol")
+                            self.sunsignImage.image = zodiacImage
                             self.horoscopeTF.text = "\(jsonResult["horoscope"]!!)"
                         }
-                        //print(jsonResult)
-                        //print(jsonResult["horoscope"]!!)
                     } catch{
                         print("JSON processing failed")
                     }
@@ -50,6 +62,7 @@ class DisplayHoroscopeViewController: UIViewController {
         }
         task.resume()
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
