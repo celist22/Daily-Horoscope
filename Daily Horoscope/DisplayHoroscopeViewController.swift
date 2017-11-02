@@ -25,6 +25,7 @@ class DisplayHoroscopeViewController: UIViewController {
     }
     
     @IBAction func today(_ sender: UIButton?){
+        apiURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/today/"
         getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
     }
     
