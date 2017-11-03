@@ -16,7 +16,7 @@ class DisplayHoroscopeViewController: UIViewController {
     @IBOutlet weak var sunsignLBL: UILabel!
     @IBOutlet weak var horoscopeTF: UITextView!
     @IBOutlet weak var sunsignImage: UIImageView!
-    
+
     var apiURL:String = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/today/"
     
     override func viewDidLoad() {
