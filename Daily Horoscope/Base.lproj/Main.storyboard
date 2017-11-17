@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Daily Horoscope" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yZP-Iq-XQr">
-                                <rect key="frame" x="80.999999999999986" y="64" width="253.66666666666663" height="43"/>
+                                <rect key="frame" x="81" y="64" width="253.66666666666669" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -43,12 +43,9 @@
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="631105200">
                                     <!--2020-12-31 11:00:00 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="selcetedDate:" destination="9pv-A4-QxB" eventType="valueChanged" id="6DX-XH-GiW"/>
-                                </connections>
                             </datePicker>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvI-Of-dWL">
-                                <rect key="frame" x="29" y="422" width="356" height="256.33333333333326"/>
+                                <rect key="frame" x="29" y="422.00000000000006" width="356" height="256.33333333333343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="faS-ei-H4r">
                                         <rect key="frame" x="195" y="51.999999999999943" width="52" height="56.333333333333314"/>
@@ -354,7 +351,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your birthday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNJ-ca-Uas">
-                                <rect key="frame" x="120.00000000000001" y="142" width="175.33333333333337" height="17"/>
+                                <rect key="frame" x="120" y="142" width="175.33333333333331" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175.33333333333331" id="j1g-2S-RGJ"/>
                                 </constraints>
@@ -384,6 +381,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H8I-rH-6z2"/>
+                    <connections>
+                        <outlet property="birthdayDP" destination="Kg1-y2-U4K" id="RI8-d4-jfV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <exit id="DgK-bm-r56" userLabel="Exit" sceneMemberID="exit"/>
@@ -678,6 +678,6 @@
         <image name="virgo-woman-symbol" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wLi-S1-LEr"/>
+        <segue reference="kX0-Cj-wSZ"/>
     </inferredMetricsTieBreakers>
 </document>

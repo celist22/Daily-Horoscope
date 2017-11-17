@@ -11,6 +11,8 @@ import UIKit
 class ChoseZodiac: UIViewController {
 
     static var chosenSign : Zodiac?
+    
+    @IBOutlet weak var birthdayDP: UIDatePicker!
     var selectedDate : Date? = nil
     var sign : String? = nil
     @IBAction func clickedButton(_ sender: UIButton) {
@@ -30,20 +32,16 @@ class ChoseZodiac: UIViewController {
         default : print("No sign selected")
         }
     }
-    //code to get date from time picker
-    @IBAction func selcetedDate(_ sender: UIDatePicker) {
-        selectedDate = sender.date
-    }
-    //this function finds the horoscope sign name for the given date
-    //Still working on this. Added print statements for debuging
-    @IBAction func showHoroscope(_ sender: Any) {
+    //Button under datepicker (birthdayDP) that pulls data from the datepicker and choses a sign
+    @IBAction func showHoroscope(_ sender: UIButton) {
+        let selectedDate = birthdayDP.calendar
         if selectedDate != nil {
-            let dateStr = selectedDate?.description
-            var splitString : [String] = dateStr!.components(separatedBy: " ")
-            var anotherSplitStr : [String] = splitString[0].components(separatedBy: "-")
-            print(anotherSplitStr)
-            let month = Int(anotherSplitStr[1])!
-            let day = Int(anotherSplitStr[2])!
+            let date = birthdayDP.date
+            let calendar = Calendar.current
+            //let year = calendar.component(.year, from: date)  // unneccesary variable, left in in case we want to add more horoscope functionality.  Like Chinese zodiac sign for instance.
+            let month = calendar.component(.month, from: date)
+            let day = calendar.component(.day, from: date)
+
             if ((month == 12 && day >= 22 && day <= 31) || (month ==  1 && day >= 1 && day <= 19)) {
                 ChoseZodiac.chosenSign = Zodiac("Capricorn", #imageLiteral(resourceName: "capricorn-astrological-sign-of-head-black-silhouette-with-horns"))
                 print("Capricorn")
