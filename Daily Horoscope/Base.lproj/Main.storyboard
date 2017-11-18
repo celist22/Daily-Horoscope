@@ -4,12 +4,12 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chose Zodiac-->
+        <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="ChoseZodiac" customModule="Daily_Horoscope" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,8 +22,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Daily Horoscope" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yZP-Iq-XQr">
-                                <rect key="frame" x="81" y="64" width="253.66666666666669" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="80.999999999999986" y="64" width="253.66666666666663" height="43"/>
+                                <color key="backgroundColor" red="0.67756623049999998" green="1" blue="0.82854595040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                                 </date>
                             </datePicker>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VvI-Of-dWL">
-                                <rect key="frame" x="29" y="422.00000000000006" width="356" height="256.33333333333343"/>
+                                <rect key="frame" x="29" y="422" width="356" height="256.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="faS-ei-H4r">
                                         <rect key="frame" x="195" y="51.999999999999943" width="52" height="56.333333333333314"/>
@@ -344,14 +344,14 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.67756623049999998" green="1" blue="0.82854595040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256.33333333333343" id="7gW-7f-saZ"/>
                                     <constraint firstAttribute="width" constant="356" id="FJe-WS-hBm"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your birthday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNJ-ca-Uas">
-                                <rect key="frame" x="120" y="142" width="175.33333333333331" height="17"/>
+                                <rect key="frame" x="120.00000000000001" y="142" width="175.33333333333337" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175.33333333333331" id="j1g-2S-RGJ"/>
                                 </constraints>
@@ -365,10 +365,11 @@
                                 <state key="normal" title="Get Horoscope"/>
                                 <connections>
                                     <action selector="showHoroscope:" destination="9pv-A4-QxB" eventType="touchUpInside" id="cFE-AP-74R"/>
+                                    <segue destination="hDU-X3-5jS" kind="show" id="JXp-23-E4Q"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.67756623053259957" green="1" blue="0.82854595036306244" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VvI-Of-dWL" secondAttribute="trailing" constant="29" id="IMD-gj-Y3P"/>
                             <constraint firstItem="yZP-Iq-XQr" firstAttribute="top" secondItem="OV9-zd-otZ" secondAttribute="bottom" id="Q06-JK-RhF"/>
@@ -380,7 +381,7 @@
                             <constraint firstItem="Kg1-y2-U4K" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="67" id="tDN-US-C1A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="H8I-rH-6z2"/>
+                    <navigationItem key="navigationItem" title="Home" id="H8I-rH-6z2"/>
                     <connections>
                         <outlet property="birthdayDP" destination="Kg1-y2-U4K" id="RI8-d4-jfV"/>
                     </connections>
@@ -464,7 +465,7 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MKy-UG-QnF">
                                 <rect key="frame" x="44" y="424" width="326" height="255"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.67756623049999998" green="1" blue="0.82854595040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="326" id="1cf-zx-phd"/>
                                     <constraint firstAttribute="height" constant="255" id="piB-Wu-PLy"/>
@@ -474,7 +475,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.67756623049999998" green="1" blue="0.82854595040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MKy-UG-QnF" secondAttribute="trailing" constant="44" id="6g5-FU-D0E"/>
                             <constraint firstItem="dy6-zk-AHx" firstAttribute="leading" secondItem="kov-zu-So3" secondAttribute="trailing" constant="8" id="6ux-Ub-aJg"/>
@@ -678,6 +679,6 @@
         <image name="virgo-woman-symbol" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kX0-Cj-wSZ"/>
+        <segue reference="JXp-23-E4Q"/>
     </inferredMetricsTieBreakers>
 </document>
