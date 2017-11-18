@@ -30,13 +30,6 @@ class AboutPage: UIViewController, MFMailComposeViewControllerDelegate {
 //        }
     }
     
-//    func mailComposeController(controller: MFMailComposeViewController,
-//                               didFinishWithResult result: MFMailComposeResult, error: NSError?) {
-//        // Check the result or perform other tasks.
-//
-//        // Dismiss the mail compose view controller.
-//        controller.dismiss(animated: true, completion: nil)
-//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
