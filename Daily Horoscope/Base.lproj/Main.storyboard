@@ -578,7 +578,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ivy-Rm-bAz">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chrislist" translatesAutoresizingMaskIntoConstraints="NO" id="ivy-Rm-bAz">
                                         <rect key="frame" x="8" y="8" width="106" height="92"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -593,7 +593,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u2z-GZ-Rpc">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_20171123_121004" translatesAutoresizingMaskIntoConstraints="NO" id="u2z-GZ-Rpc">
                                         <rect key="frame" x="160" y="8" width="106" height="92"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -718,9 +718,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_20171123_121004" width="1151" height="863"/>
         <image name="aquarius-astrological-sign-symbol" width="42" height="42"/>
         <image name="aries-zodiac-symbol-of-frontal-goat-head (1)" width="42" height="42"/>
         <image name="capricorn-astrological-sign-of-head-black-silhouette-with-horns" width="42" height="42"/>
+        <image name="chrislist" width="2048" height="1365"/>
         <image name="crab-cancer-symbol" width="42" height="42"/>
         <image name="gemini-female-twins-couple-symbol" width="42" height="42"/>
         <image name="icons8-Contacts_25" width="33" height="33"/>
