@@ -12,8 +12,8 @@ class AppStartViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        let when = DispatchTime.now() + 3
+        // Segue to navigate to home page after 2 seconds delay.
+        let when = DispatchTime.now() + 2
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.performSegue(withIdentifier: "startToMainView", sender: self)
         }

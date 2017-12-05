@@ -8,14 +8,14 @@
 //
 
 import UIKit
-
+//class for home page where we chose our date of birth or a zodiac sign to navigate to Display oroscope view controller
 class ChoseZodiac: UIViewController {
     
     static var chosenSign : Zodiac?
     @IBOutlet weak var birthdayDP: UIDatePicker!
     var selectedDate : Date? = nil
     var sign : String? = nil
-    
+   //method called when we click on a zodiac sign
     @IBAction func tappedASign(_ sender: UIButton) {
         switch sender.tag {
         case 0: ChoseZodiac.chosenSign = Zodiac("Aries", #imageLiteral(resourceName: "aries-zodiac-symbol-of-frontal-goat-head (1)"))

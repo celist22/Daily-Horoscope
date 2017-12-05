@@ -514,7 +514,7 @@
                                 <rect key="frame" x="106" y="125" width="68" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="1ez-dU-JdL"/>
-                                    <constraint firstAttribute="width" constant="68" id="8nj-Jy-J2l"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="8nj-Jy-J2l"/>
                                     <constraint firstAttribute="height" constant="19" id="eBP-5t-WSa"/>
                                 </constraints>
                                 <state key="normal" title="Yesterday"/>

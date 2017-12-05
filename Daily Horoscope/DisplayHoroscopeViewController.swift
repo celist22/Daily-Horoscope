@@ -11,7 +11,7 @@ import UIKit
 class DisplayHoroscopeViewController: UIViewController {
     
     var chosenHoroscope:Zodiac?
-    
+    //variables for visual elements on view controller like buttons, extfields etc,.
     @IBOutlet weak var dateLBL: UILabel!
     @IBOutlet weak var sunsignLBL: UILabel!
     @IBOutlet weak var horoscopeTF: UITextView!
@@ -20,8 +20,7 @@ class DisplayHoroscopeViewController: UIViewController {
     @IBOutlet weak var todayBTN: UIButton!
     @IBOutlet weak var tomorrowBTN: UIButton!
     
-    
-    
+    //api url which is used to pull horoscope information using sign selected
     var apiURL:String = "http://sandipbgt.com/theastrologer/api/horoscope/\(String(describing: ChoseZodiac.chosenSign?.sign.lowercased()))/today/"
     
     override func viewDidLoad() {
@@ -29,6 +28,7 @@ class DisplayHoroscopeViewController: UIViewController {
         today(nil)
     }
     
+    // pulls horoscope for today calls getHorosope method
     @IBAction func today(_ sender: UIButton?){
         apiURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/today/"
         getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
@@ -37,6 +37,7 @@ class DisplayHoroscopeViewController: UIViewController {
         yesterdayBTN.backgroundColor = UIColor.white
     }
     
+    // pulls horoscope for yesterday calls getHorosope method
     @IBAction func yesterday(_ sender: UIButton){
         apiURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/yesterday/"
         getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
@@ -45,6 +46,7 @@ class DisplayHoroscopeViewController: UIViewController {
         todayBTN.backgroundColor = UIColor.white
     }
     
+    // pulls horoscope for tomorrow calls getHorosope method
     @IBAction func tomorrow(_ sender: UIButton){
         apiURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/tomorrow/"
         getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
@@ -53,6 +55,7 @@ class DisplayHoroscopeViewController: UIViewController {
         yesterdayBTN.backgroundColor = UIColor.white
     }
     
+    // actual method which does api call to get horoscope data that shows up on the page
     func getHoroscope(apiLink:String,zodiacImage:UIImage){
         let url = URL(string: apiLink)
         let task = URLSession.shared.dataTask(with: url!){ (data, response, error) in
