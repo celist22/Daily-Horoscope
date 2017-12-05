@@ -16,7 +16,13 @@ class DisplayHoroscopeViewController: UIViewController {
     @IBOutlet weak var sunsignLBL: UILabel!
     @IBOutlet weak var horoscopeTF: UITextView!
     @IBOutlet weak var sunsignImage: UIImageView!
-
+    
+    @IBOutlet weak var yesterdayBTN: UIButton!
+    @IBOutlet weak var todayBTN: UIButton!
+    @IBOutlet weak var tomorrowBTN: UIButton!
+    
+    
+    
     var apiURL:String = "http://sandipbgt.com/theastrologer/api/horoscope/\(String(describing: ChoseZodiac.chosenSign?.sign.lowercased()))/today/"
     
     override func viewDidLoad() {
@@ -27,19 +33,26 @@ class DisplayHoroscopeViewController: UIViewController {
     @IBAction func today(_ sender: UIButton?){
         apiURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/today/"
         getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
+        todayBTN.backgroundColor = UIColor.lightGray
+        tomorrowBTN.backgroundColor = UIColor.white
+        yesterdayBTN.backgroundColor = UIColor.white
     }
     
     @IBAction func yesterday(_ sender: UIButton){
         apiURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/yesterday/"
         getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
+        yesterdayBTN.backgroundColor = UIColor.lightGray
+        tomorrowBTN.backgroundColor = UIColor.white
+        todayBTN.backgroundColor = UIColor.white
     }
     
     @IBAction func tomorrow(_ sender: UIButton){
         apiURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(ChoseZodiac.chosenSign!.sign.lowercased())/tomorrow/"
         getHoroscope(apiLink: apiURL, zodiacImage: ChoseZodiac.chosenSign!.zodiacImage)
+        tomorrowBTN.backgroundColor = UIColor.lightGray
+        todayBTN.backgroundColor = UIColor.white
+        yesterdayBTN.backgroundColor = UIColor.white
     }
-    
-    
     
     func getHoroscope(apiLink:String,zodiacImage:UIImage){
         let url = URL(string: apiLink)
@@ -64,21 +77,9 @@ class DisplayHoroscopeViewController: UIViewController {
         task.resume()
     }
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
