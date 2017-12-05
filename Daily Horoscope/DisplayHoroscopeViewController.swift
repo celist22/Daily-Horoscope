@@ -16,7 +16,6 @@ class DisplayHoroscopeViewController: UIViewController {
     @IBOutlet weak var sunsignLBL: UILabel!
     @IBOutlet weak var horoscopeTF: UITextView!
     @IBOutlet weak var sunsignImage: UIImageView!
-    
     @IBOutlet weak var yesterdayBTN: UIButton!
     @IBOutlet weak var todayBTN: UIButton!
     @IBOutlet weak var tomorrowBTN: UIButton!
