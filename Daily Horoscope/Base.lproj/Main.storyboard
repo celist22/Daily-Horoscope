@@ -5,9 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Daily Horoscope" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yZP-Iq-XQr">
-                                <rect key="frame" x="81" y="64" width="253.66666666666669" height="43"/>
+                                <rect key="frame" x="81" y="81" width="253.66666666666669" height="43"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -407,10 +405,10 @@
                             <constraint firstItem="ZWE-df-C7O" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="155" id="1lM-6v-Rqo"/>
                             <constraint firstItem="Kg1-y2-U4K" firstAttribute="top" secondItem="CNJ-ca-Uas" secondAttribute="bottom" constant="-1" id="7dY-RE-4Uy"/>
                             <constraint firstAttribute="trailing" secondItem="VvI-Of-dWL" secondAttribute="trailing" constant="29" id="IMD-gj-Y3P"/>
-                            <constraint firstItem="yZP-Iq-XQr" firstAttribute="top" secondItem="OV9-zd-otZ" secondAttribute="bottom" id="Q06-JK-RhF"/>
+                            <constraint firstItem="CNJ-ca-Uas" firstAttribute="top" secondItem="yZP-Iq-XQr" secondAttribute="bottom" constant="18" id="IyM-RP-CsR"/>
+                            <constraint firstItem="yZP-Iq-XQr" firstAttribute="top" secondItem="OV9-zd-otZ" secondAttribute="bottom" constant="17" id="Q06-JK-RhF"/>
                             <constraint firstItem="ZWE-df-C7O" firstAttribute="top" secondItem="Kg1-y2-U4K" secondAttribute="bottom" constant="8" id="QYT-ds-QKi"/>
                             <constraint firstItem="CNJ-ca-Uas" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="120" id="eEq-1G-a9b"/>
-                            <constraint firstItem="CNJ-ca-Uas" firstAttribute="top" secondItem="yZP-Iq-XQr" secondAttribute="bottom" constant="35" id="gvk-Kw-gPa"/>
                             <constraint firstItem="yZP-Iq-XQr" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="kY6-S8-5XE"/>
                             <constraint firstItem="cEt-ah-S4i" firstAttribute="top" secondItem="VvI-Of-dWL" secondAttribute="bottom" constant="8.6666666666666288" id="o52-D3-tPQ"/>
                             <constraint firstItem="Kg1-y2-U4K" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="67" id="tDN-US-C1A"/>
@@ -502,14 +500,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Your Horoscope" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="suT-4G-wkb">
-                                <rect key="frame" x="81" y="64" width="253.66666666666669" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guS-ta-chH">
                                 <rect key="frame" x="106" y="125" width="68" height="19"/>
                                 <constraints>
@@ -522,6 +512,17 @@
                                     <action selector="yesterday:" destination="hDU-X3-5jS" eventType="touchUpInside" id="qHS-9Z-OYQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Your Horoscope" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="suT-4G-wkb">
+                                <rect key="frame" x="81" y="81" width="253.66666666666669" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="9Ts-kn-N3d"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="253.66666666666669" id="t1O-Q7-aYh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -532,8 +533,10 @@
                             <constraint firstItem="kp9-pW-brC" firstAttribute="top" secondItem="izD-XU-aJ8" secondAttribute="bottom" constant="68" id="KS3-tf-zqd"/>
                             <constraint firstItem="guS-ta-chH" firstAttribute="leading" secondItem="1Rc-2h-za8" secondAttribute="leading" constant="106" id="MTe-nk-eVq"/>
                             <constraint firstItem="kov-zu-So3" firstAttribute="leading" secondItem="guS-ta-chH" secondAttribute="trailing" constant="8" id="NkY-9a-9Ch"/>
+                            <constraint firstItem="suT-4G-wkb" firstAttribute="centerX" secondItem="1Rc-2h-za8" secondAttribute="centerX" id="Pdr-rs-IiM"/>
                             <constraint firstItem="izD-XU-aJ8" firstAttribute="top" secondItem="kov-zu-So3" secondAttribute="bottom" constant="34" id="TXN-1x-aN2"/>
                             <constraint firstItem="dy6-zk-AHx" firstAttribute="top" secondItem="fgM-iY-dnh" secondAttribute="bottom" constant="61" id="Trb-4Q-ijy"/>
+                            <constraint firstItem="suT-4G-wkb" firstAttribute="top" secondItem="fgM-iY-dnh" secondAttribute="bottom" constant="17" id="c5L-mg-HCb"/>
                             <constraint firstItem="guS-ta-chH" firstAttribute="top" secondItem="fgM-iY-dnh" secondAttribute="bottom" constant="61" id="fYE-pm-LeU"/>
                             <constraint firstItem="VOk-bI-jNe" firstAttribute="top" secondItem="izD-XU-aJ8" secondAttribute="bottom" constant="37" id="hP4-IJ-Bav"/>
                             <constraint firstItem="kp9-pW-brC" firstAttribute="leading" secondItem="1Rc-2h-za8" secondAttribute="leading" constant="51" id="iUl-OB-5Y1"/>
@@ -568,7 +571,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkK-oc-5BW">
-                                <rect key="frame" x="114" y="64" width="186" height="43"/>
+                                <rect key="frame" x="114" y="81" width="186" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="186" id="Sd5-Rh-mIN"/>
                                 </constraints>
@@ -576,8 +579,19 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OQ-eo-fA6">
+                                <rect key="frame" x="24" y="115" width="366" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="5Ys-83-Y5V"/>
+                                    <constraint firstAttribute="height" constant="137" id="foL-Hh-ffq"/>
+                                </constraints>
+                                <string key="text">This was an app that we developed for our Mobile Computing iOS class.  We are excited to learn more about making mobile apps for Apple devices.  Hopefully this will be the first of many you will get to experience.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX6-cj-car">
-                                <rect key="frame" x="0.0" y="260" width="414" height="192"/>
+                                <rect key="frame" x="0.0" y="233" width="414" height="192"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Christopher List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SO-c3-cIk">
                                         <rect key="frame" x="150" y="108" width="127" height="21"/>
@@ -640,25 +654,14 @@
                                     <constraint firstAttribute="width" constant="414" id="lLB-Vg-UHI"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OQ-eo-fA6">
-                                <rect key="frame" x="24" y="115" width="366" height="137"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="5Ys-83-Y5V"/>
-                                    <constraint firstAttribute="height" constant="137" id="foL-Hh-ffq"/>
-                                </constraints>
-                                <string key="text">This was an app that we developed for our Mobile Computing iOS class.  We are excited to learn more about making mobile apps for Apple devices.  Hopefully this will be the first of many you will get to experience.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lkK-oc-5BW" firstAttribute="top" secondItem="1Gh-UW-oMO" secondAttribute="bottom" id="5Jg-rv-qzz"/>
+                            <constraint firstItem="9OQ-eo-fA6" firstAttribute="top" secondItem="1Gh-UW-oMO" secondAttribute="bottom" constant="51" id="2ih-Xq-ijG"/>
+                            <constraint firstItem="lkK-oc-5BW" firstAttribute="top" secondItem="1Gh-UW-oMO" secondAttribute="bottom" constant="17" id="5Jg-rv-qzz"/>
                             <constraint firstItem="9OQ-eo-fA6" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="6cS-pk-NjW"/>
                             <constraint firstItem="lkK-oc-5BW" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="7no-n1-NCE"/>
-                            <constraint firstItem="9OQ-eo-fA6" firstAttribute="top" secondItem="lkK-oc-5BW" secondAttribute="bottom" constant="8" id="8ck-2d-p7T"/>
-                            <constraint firstItem="bX6-cj-car" firstAttribute="firstBaseline" secondItem="9OQ-eo-fA6" secondAttribute="baseline" constant="12.333333333333334" symbolType="layoutAnchor" id="F78-vN-SdP"/>
+                            <constraint firstItem="bX6-cj-car" firstAttribute="top" secondItem="1Gh-UW-oMO" secondAttribute="bottom" constant="169" id="Z03-ef-hK7"/>
                             <constraint firstItem="bX6-cj-car" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="zxX-vA-Xg9"/>
                         </constraints>
                     </view>
